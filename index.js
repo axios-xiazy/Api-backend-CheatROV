@@ -14,10 +14,10 @@ app.use(cors());
 
 // Database configuration
 const pool = mariadb.createPool({
-    host: 'localhost',
-    user: 'zxvxzv',
+    host: '122.154.34.170',
+    user: 'dynastyx_zxvxzv',
     password: 'Jklasd123@',
-    database: 'rov',
+    database: 'dynastyx_api',
     connectionLimit: 10
 });
 
