@@ -13,12 +13,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 app.use(csurf());
+app.disable('x-powered-by');
 
 // Database configuration
 const pool = mariadb.createPool({
     host: '122.154.34.170',
     user: 'dynastyx_zxvxzv',
-    password: 'Jklasd123@',
+    password: process.env.DATABASE_PASSWORD,,
     database: 'dynastyx_api',
     connectionLimit: 10
 });
