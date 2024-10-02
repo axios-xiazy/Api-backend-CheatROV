@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const mariadb = require('mariadb');
 const base64url = require('base64url');
 const cors = require('cors')
-const csurf = require("csurf");
+//const csurf = require("csurf");
 const { Webhook, MessageBuilder } = require('discord-webhook-node');
 const hook = new Webhook("https://discord.com/api/webhooks/1149030562674258032/oCKkXWPL63tB33ydXxEoST6uQaAEpJirV0t_MVstITGTCJ2lfGPgTsICAqcshB4BrJNA");
 
@@ -12,7 +12,7 @@ const hook = new Webhook("https://discord.com/api/webhooks/1149030562674258032/o
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
-app.use(csurf());
+//app.use(csurf());
 app.disable('x-powered-by');
 
 // Database configuration
