@@ -28,7 +28,7 @@ const pool = mariadb.createPool({
 // Inside your POST route handler
 app.post('/auth-key-rov', async (req, res) => {
     try {
-		//res.json({ valid: false, message: "⚠️ ปิดปรับปรุง" });
+	//res.json({ valid: false, message: "⚠️ ปิดปรับปรุง" });
         const encodedKey = req.body.key; // Get the base64-encoded key from the request
         const deviceId = req.body.device_id; // Get the device ID from the request
 
