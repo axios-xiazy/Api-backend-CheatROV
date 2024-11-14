@@ -6,7 +6,7 @@ const base64url = require('base64url');
 const cors = require('cors')
 //const csurf = require("csurf");
 const { Webhook, MessageBuilder } = require('discord-webhook-node');
-const hook = new Webhook("https://discord.com/api/webhooks/1149030562674258032/oCKkXWPL63tB33ydXxEoST6uQaAEpJirV0t_MVstITGTCJ2lfGPgTsICAqcshB4BrJNA");
+const hook = new Webhook("url webhook");
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,11 +17,11 @@ app.disable('x-powered-by');
 
 // Database configuration
 const pool = mariadb.createPool({
-    host: '122.154.34.170',
-    user: 'dynastyx_zxvxzv',
+    host: 'ip',
+    user: 'user',
     password: process.env.DATABASE_PASSWORD,,
-    database: 'dynastyx_api',
-    connectionLimit: 10
+    database: 'pass',
+    connectionLimit: 2
 });
 
 // Route to handle POST requests
